@@ -1,0 +1,28 @@
+{
+  "name": "architecture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.18.0",
+    "sqlite3": "^5.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iths-feu-jsu-2021/lousy-todo-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iths-feu-jsu-2021/lousy-todo-service/issues"
+  },
+  "homepage": "https://github.com/iths-feu-jsu-2021/lousy-todo-service#readme",
+  "description": "",
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  }
+}

@@ -1,0 +1,236 @@
+
+/* Mörk grå: #535556
+Gul: #FFD600
+Details header: #748687
+Grå: #8E8E8E
+Ljusgrå: #C4C4C4
+Ljusare grå: #E1DEDE
+Highlightgrå: #444444
+main: #424242   */
+
+
+
+
+
+
+body {
+    width: 1200px;
+    margin: auto;
+    font-family: 'Ropa Sans', sans-serif;
+}
+header {
+    background-image: url(../img/header-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+
+.header h1 {
+    color: #FFD600;
+    width: 30%;
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 3rem;
+    
+    
+}
+
+
+
+main {
+    background-color:#424242;
+    display: grid;
+    grid-template-columns: repeat(1fr, 12);
+    height: 40rem;
+    
+}
+
+section:nth-of-type(1) {
+    background-color: #C4C4C4;
+    transform: translateY(-5%);
+    width: 23rem;
+    height: 550px;
+    grid-row: 1;
+    grid-column: 5/6;
+    border-radius: 10px;
+    
+
+}
+
+section:nth-of-type(1) h2 {
+        display: flex;
+        background-color: #535556;
+        color: #FFD600;
+        margin: 0;
+        height: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0px 0px;
+}
+
+section:nth-of-type(2) {
+    background-color: #8E8E8E;
+    transform: translateY(-5%);
+    width: 23rem;
+    height: 550px;
+    grid-row: 1;
+    grid-column: 8/12;
+    border-radius: 10px;
+    box-shadow: 10px solid black;
+    
+}
+section:nth-of-type(2) h2 {
+    display: flex;
+    background-color: #748687;
+    color: #FFD600;
+    margin: 0;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.characters #btn1 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #8E8E8E;
+    color: white;
+    border: 1px;
+    cursor: pointer;
+}
+
+.characters #btn2 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #E1DEDE;
+    color: #424242;
+    border: 1px;
+    cursor: pointer;
+}
+
+.characters #btn3 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #8E8E8E;
+    color: white;
+    border: 1px;
+    cursor: pointer;
+}
+
+.characters #btn4 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #E1DEDE;
+    color: #424242;
+    border: 1px;
+    cursor: pointer;
+}
+
+.characters #btn5 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #8E8E8E;
+    color: white;
+    border: 1px;
+    cursor: pointer;
+}
+
+.characters #btn6 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #E1DEDE;
+    color: #424242;
+    border: 1px;
+    cursor: pointer;
+}
+
+.characters #btn7 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #8E8E8E;
+    color: white;
+    border: 1px;
+    cursor: pointer;
+}
+
+.characters #btn8 {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #E1DEDE;
+    color: #424242;
+    border: 1px;
+    cursor: pointer;
+}
+#btn1:hover {
+    background-color: #424242;
+    color: white;
+}
+#btn2:hover {
+    background-color: #424242;
+    color: white;
+}
+#btn3:hover {
+    background-color: #424242;
+    color: white;
+}
+#btn4:hover {
+    background-color: #424242;
+    color: white;
+}
+#btn5:hover {
+    background-color: #424242;
+    color: white;
+}
+#btn6:hover {
+    background-color: #424242;
+    color: white;
+}
+#btn7:hover {
+    background-color: #424242;
+    color: white;
+}
+#btn8:hover {
+    background-color: #424242;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+}
+.bottom p {
+    font-size: 1.7rem;
+}
+.bottom img {
+    height: 25px;
+}
+main .div1 {
+    background-color: #C4C4C4;
+    width: 23rem;
+    height: 245px;
+}
+main .div2 {
+    background-color: #8E8E8E;
+    width: 23rem;
+    height: 245px;
+    border-radius: 0px 0px 10px 10px;
+    
+}

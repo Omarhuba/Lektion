@@ -1,0 +1,22 @@
+body {
+    background-color:tan;
+    font-size: 20px;
+    color: tomato;
+
+}
+div h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    background-color: darkgray;
+    width: 300px;
+    padding: 30px;
+    margin: auto;
+    
+}
+.box1 {
+    background-color: teal;
+    width: 1800px;
+
+    padding: 30px;
+
+}

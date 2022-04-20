@@ -1,0 +1,33 @@
+body{
+    background-color: teal;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px black;
+    background-color: rgb(201, 147, 94);
+    height: 500px;
+    width: 60%;
+    margin: 100px auto;
+}
+div p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+div input{
+    margin:20px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+}
+div button{
+    width: 100px;
+    height: 40px;
+    background-color: chartreuse;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+}

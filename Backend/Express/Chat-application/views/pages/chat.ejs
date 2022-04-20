@@ -1,0 +1,16 @@
+<%- include ('../layout/top') %> 
+<h1>Chat!</h1>
+<p>Loged as: <%= username %> </p>
+<form action="/logout" method="POST">
+    <button>Log out</button>
+</form>
+
+<form action="/messages" method="POST">
+    <input type="text" name="message" placeholder="Enter message">
+    <button>Send Message</button>
+</form>
+
+<section>
+    <%- include('../partials/messages', {messages}) %>
+</section>
+<%- include ('../layout/bottom') %> 

@@ -1,0 +1,5 @@
+const MyModules = require('./module.js')
+const OtherModule = require('./OtherModule.js')
+MyModules.hello()
+OtherModule.hi()
+OtherModule.hey()

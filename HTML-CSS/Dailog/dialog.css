@@ -1,0 +1,71 @@
+body {
+    background-image: url(./images.jpg);
+    background-repeat: repeat-x;
+    margin: 100px;
+}
+.wrapper {
+    display: center;
+    background-color: rgb(58, 95, 180);
+    width: 600px;
+    height: 300px;
+}
+nav {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    width: 80%;
+    height: 50px;
+
+}
+.wrapper nav a {
+    background-color: burlywood;
+    display: grid;
+    padding: 2em;
+    border: cadetblue 1px solid;
+    margin: auto;
+
+}
+
+
+button {
+    font-size: 20px;
+    background-color:rgb(196, 213, 214);
+    color: royalblue;
+    margin: 5px;
+    align-content: flex-end;
+    border-radius: 10px;
+    float: right;
+    
+    
+
+}
+button:hover {
+    background-color: rgb(187, 14, 14);
+    transition: 0,5s;
+}
+.dialog h2 {
+    color: chartreuse;
+    text-align: center;
+    padding: 20px
+}
+.ok {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    border: 3px solid #000;
+    float: left;
+    background-color: khaki;
+    position: right;
+    padding: 30px;
+    
+}
+.ok p {
+    color: lightcoral;
+    margin: auto;
+    font-weight: 100px;
+    font:  sans-serif;
+}

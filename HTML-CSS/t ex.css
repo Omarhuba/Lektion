@@ -1,0 +1,23 @@
+.wrapper {
+    /*display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
+*/
+    display: grid ;
+    grid-template-columns: 2fr 1fr 1fr;
+
+
+
+
+}
+.wrapper > div {
+    background-color: sandybrown;
+} 
+.wrapper > div:nth-child(odd) {
+    background-color: seagreen;
+}
+
+.innre {
+    display: grid;
+}

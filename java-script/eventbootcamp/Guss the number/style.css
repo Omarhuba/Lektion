@@ -1,0 +1,22 @@
+body{
+    background-color: #91263E;
+}
+#container{
+    background-color: #4F9134;
+    border: black 5px solid;
+    height: 250px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+p{
+    color: rgb(43, 19, 19);
+    font-size: 30px;
+}
+#input{
+    width: 150px;
+    margin: 25px auto;
+}
+.btn{
+    margin: 25px auto auto 5px;
+}
