@@ -1,0 +1,284 @@
+html,
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #eee;
+}
+.wrapper {
+  height: 100%;
+  background-color: white;
+}
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+  padding: 20px 0;
+}
+.navbar li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+.navbar li a:hover {
+  color: chocolate;
+  transition: 0.3s;
+}
+.navbar ul p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: white;
+}
+.navbar ul h1 {
+  margin: 0;
+  color: wheat;
+}
+.top {
+  margin: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 1.5rem 3rem;
+}
+.flavor-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+.flavor-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container input[type="email"] {
+  width: 177px;
+  padding: 8px;
+  margin: 5px auto;
+  border: 1px solid;
+  border-radius: 5px;
+  /* background: #aaa; */
+  text-align: center;
+}
+.card-container input[type="email"]:hover {
+  transition: 0.2s;
+  border: 2px solid rgb(27, 189, 13);
+}
+.card-container button {
+  width: 150px;
+  height: 30px;
+  background-color: #555555;
+  color: white;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-container button:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: #555555;
+}
+.bottom {
+  background-color: #333;
+  height: 90px;
+}
+.bottom p {
+  padding-left: 1rem;
+  color: white;
+}
+.bottom,
+.footer-links p,
+a {
+  padding: 0.3rem;
+  color: chocolate;
+}
+
+.wrapper-thanks {
+  width: 1200px;
+  height: 1000px;
+  background-color: #aaa;
+  display: grid;
+  place-items: center;
+}
+.thanks {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.thanks button {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.thanks a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.wrapper-flavors {
+  height: 100%;
+  background-image: url("../images/images.jpg");
+  height: 1000px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper-flavors ul {
+  display: grid;
+  place-items: center;
+  margin: 0px;
+  padding: 0.7rem;
+  font-size: 1.7rem;
+  color: white;
+}
+.wrapper-flavors li {
+  margin-top: 2rem;
+}
+
+.wrapper-login {
+  height: 400px;
+  background-color: #fff;
+}
+
+.wrapper-register {
+  height: 100%;
+  background-color: #fff;
+}
+.register-container {
+  width: 400px;
+  margin: auto;
+  padding: 16px;
+  background-color: white;
+}
+.wrapper-login {
+  height: 100%;
+  background-color: #fff;
+}
+.login-container {
+  width: 400px;
+  margin: auto;
+  padding: 16px;
+  background-color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+.loginbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.wrapper-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 620px;
+}
+
+.admin-container {
+  margin: 20px;
+  max-width: 400px;
+  height: 400px;
+  padding: 16px;
+  background-color: white;
+}
+
+.admin-container input[type="text"] {
+  width: 300px;
+  padding: 15px;
+  margin: 5px 0 60px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.btn {
+  background-color: #04aa6d;
+  color: white;
+  margin-left: 130px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  width: 140px;
+  height: 40px;
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  opacity: 1;
+}

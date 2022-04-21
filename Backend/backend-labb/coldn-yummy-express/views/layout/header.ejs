@@ -1,0 +1,17 @@
+<div class="navbar">
+  <ul>
+    <li><a href="/">HOME</a></li>
+    <li><a href="/flavors">VOTES</a></li>
+    <li><a href="/register">REGISTER</a></li>
+    <li><a href="/login">LOGIN</a></li>
+    <li>
+      <% if( user ) { %>
+      <h1>Hi: <%= user.username %></h1>
+      <a href="/logout">Logout</a>
+      <a href="/admin">Admin</a>
+      <%} else { %>
+      <h1><%='' %></h1>
+      <% } %>
+    </li>
+  </ul>
+</div>
