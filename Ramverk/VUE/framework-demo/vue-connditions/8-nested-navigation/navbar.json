@@ -1,0 +1,35 @@
+[
+    {
+      "title": "Home",
+      "href": "/",
+      "children": []
+    },
+    {
+      "title": "Categories ▽",
+      "href": null,
+      "children": [
+        {
+          "title": "Villians",
+          "href": "/categories/villians"
+        },
+        {
+          "title": "Heroes",
+          "href": "/categories/heroes"
+        },
+        {
+          "title": "Comic Relief",
+          "href": "/categories/comedians"
+        },
+        {
+          "title": "Inanimate Objects",
+          "href": "/categories/inanimate"
+        }
+      ]
+    },
+    {
+      "title": "About",
+      "href": "/about",
+      "children": []
+    }
+
+  ]
