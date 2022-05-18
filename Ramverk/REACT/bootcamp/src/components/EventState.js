@@ -1,28 +1,5 @@
-import imgFile from '../assets/betty_white.jpeg'
-import Styling from './Styling.css'
-import React, { useState } from 'react'
-
-
-export  function Memory() {
-    const data = {
-        name: 'Betty White',
-        job: 'Actress',
-        life: 'January 17, 1922 – December 31, 2021',
-        imgFile: './assets/betty_white.jpeg',
-        quote: 'My mother always used to say, “The older you get, the better you get. Unless you’re a banana.”'
-      }
-  return (
-    <div className='Memory'>
-        <h1 className='name'>{data.name}</h1>
-        <h2 className='job'>{data.job}</h2>
-        <p className='life'>{data.life}</p>
-        <img className='imgFile' src={imgFile}></img>
-        <p className='quote'>{data.quote}</p>
-    </div>
-  )
-}
-
-
+import { useState } from 'react'
+import style from '../module/index.module.scss'
 
 
 export  function Counter() {
@@ -38,14 +15,14 @@ export  function Counter() {
     const reset = ()=>{
         setCounter ( count => 0)
     }
-  return (<>
+  return (<div className={style.counter}>
   <span>
       <button onClick={plus}>Click(++)</button>
       <button onClick={minus}>Click(--)</button>
       <button onClick={reset}>Click(reset)</button>
   </span>
       <h2>{counter}</h2>
-  </>
+  </div>
   )
 }
 
@@ -53,9 +30,9 @@ export  function Counter() {
 export const InputDuplication = () => {
   const [text, setVal] = useState('')
    return (
-      <div>
+      <div className={style.InputDuplication}>
            <input style={{margin:'24px'}} type='text' value={text} onChange={(e)=>setVal(e.target.value)} />
-           <p style={{color:'red'}}>{text}</p>
+           <h2 style={{color:'red'}}>{text}</h2>
       </div>
   )
 }
@@ -64,7 +41,25 @@ export const InputDuplication = () => {
 // export const DiceRoller = ()=>{
 //   const [text, setVal] =
 // }
-
+export const DiceRoller = () => {
+    let [text, setText] = useState('')
+    let output;
+    const randomNumber = () => {
+        const random = Math.floor(Math.random(text) * 10)
+        if(text !== null){
+            text = ''
+        }
+      return  output = random
+    }
+    randomNumber()
+    return (
+        <div className={style.DiceRoller}>
+            <h1>Dice Roller</h1>
+             <input style={{margin:'24px'}} type='text' value={text} onChange={(e)=>setText(e.target.value)} />
+             <h2 style={{color:'red'}}>{output}</h2>
+        </div>
+    )
+}
 
 export const SubmitPrevention = ()=>{
   const [text , setText] = useState('')
@@ -73,7 +68,7 @@ export const SubmitPrevention = ()=>{
     setText('hello world')
   }
   return (
-    <div>
+    <div className={style.SubmitPrevention}>
       <form onSubmit={showMessage}>
         {/* <input onChange={(e) =>setText(e.target.value)} style={{margin: "10px"}}/> */}
         <input type="text" onKeyUp={(e)=> setText(e.target.value)}/>
@@ -84,23 +79,3 @@ export const SubmitPrevention = ()=>{
     </div>
   )
 }
-
-// export const FormSubmitPrevention = () => {
-//   let [text, setText] = useState("");
-
-//   const showText = (e) => {
-//     setText("omar");
-//     e.preventDefault();
-//   };
-
-//   return (
-//     <div>
-//       <form onSubmit={showText}>
-//         <input onChange={(e) => setText(e.target.value)} />
-//         <button type="submit">Submit</button>
-//       </form>
-
-//       <p style={{ color: "red" }}>{text}</p>
-//     </div>
-//   );
-// };
