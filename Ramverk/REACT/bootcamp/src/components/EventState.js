@@ -40,9 +40,7 @@ export const InputDuplication = () => {
 }
 
 
-// export const DiceRoller = ()=>{
-//   const [text, setVal] =
-// }
+
 export const DiceRoller = () => {
     let [text, setText] = useState('')
     let output;
