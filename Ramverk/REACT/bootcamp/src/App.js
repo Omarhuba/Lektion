@@ -2,7 +2,7 @@ import './App.css';
 import './module/index.module.scss';
 import { GettingStarted } from './components/GettingStarted';
 import { Counter, InputDuplication, SubmitPrevention, DiceRoller } from './components/EventState';
-import { ToggleBtn, ToggleButton, Fruits, Shröedingers, TabView } from './components/ConditionalList';
+import { ToggleBtn, ToggleButton, Fruits, Shröedingers, TabView, FakedLogin, Modal, FruitSalad } from './components/ConditionalList';
 
 function App() {
   return (
@@ -19,6 +19,9 @@ function App() {
         <Fruits />
         <Shröedingers />
         <TabView />
+        <FakedLogin />
+        <Modal />
+        <FruitSalad />
 
 
       </header>

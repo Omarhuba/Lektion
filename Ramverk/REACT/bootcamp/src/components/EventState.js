@@ -16,6 +16,7 @@ export  function Counter() {
         setCounter ( count => 0)
     }
   return (<div className={style.counter}>
+    <h1>Counter</h1>
   <span>
       <button onClick={plus}>Click(++)</button>
       <button onClick={minus}>Click(--)</button>
@@ -31,6 +32,7 @@ export const InputDuplication = () => {
   const [text, setVal] = useState('')
    return (
       <div className={style.InputDuplication}>
+        <h1>InputDuplication</h1>
            <input style={{margin:'24px'}} type='text' value={text} onChange={(e)=>setVal(e.target.value)} />
            <h2 style={{color:'red'}}>{text}</h2>
       </div>
@@ -69,6 +71,7 @@ export const SubmitPrevention = ()=>{
   }
   return (
     <div className={style.SubmitPrevention}>
+      <h1>SubmitPrevention</h1>
       <form onSubmit={showMessage}>
         {/* <input onChange={(e) =>setText(e.target.value)} style={{margin: "10px"}}/> */}
         <input type="text" onKeyUp={(e)=> setText(e.target.value)}/>
