@@ -1,3 +1,48 @@
+.Bootcamp {
+    background-color: #ccc;
+    height: 100%;
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem 4rem;
+  }
+.Navigation{
+    width: 1410px;
+    // height: 100px;
+    padding: 1rem;
+    background-color: #fff;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    a{
+        margin: 5rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: darkcyan;
+    }
+    a:hover{
+        color: cyan;
+    }
+}
+.Main{
+    height: 500px;
+    h1{
+        margin-top: 200px;
+        font-size: 5rem;
+    }
+}
+.Footer{
+    height: 200px;
+    width: 1440px;
+    background-color: darkcyan;
+    h1{
+        font-size: 5rem;
+    }
+}
+
+
+
+
 .Memory{
     display: flex;
     flex-direction: column;

@@ -187,7 +187,7 @@ export const FruitSalad = () => {
   const [arr2, setArr2] = useState([]);
 
   const arryHandeler = () => {
-    
+
   };
 
   return (

@@ -1,31 +1,35 @@
-import './App.css';
-import './module/index.module.scss';
-import { GettingStarted } from './components/GettingStarted';
-import { Counter, InputDuplication, SubmitPrevention, DiceRoller } from './components/EventState';
-import { ToggleBtn, ToggleButton, Fruits, Shröedingers, TabView, FakedLogin, Modal, FruitSalad } from './components/ConditionalList';
+import "./App.css";
+import "./module/index.module.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Navigation from "./components/layout/Navigation";
+import { Home } from "./components/Pages/Home";
+import { About } from "./components/Pages/About";
+import { Contact } from "./components/Pages/Contact";
+import { Bootcamp } from "./components/Pages/Bootcamp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <GettingStarted />
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Header />
+          <Navigation />
 
-        <Counter />
-        <InputDuplication />
-        <SubmitPrevention />
-        <DiceRoller />
-        <ToggleBtn />
-        <ToggleButton />
-        <Fruits />
-        <Shröedingers />
-        <TabView />
-        <FakedLogin />
-        <Modal />
-        <FruitSalad />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Bootcamp" element={<Bootcamp />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
 
-
-      </header>
-    </div>
+          
+          <Footer />
+        </header>
+      </div>
+    </Router>
   );
 }
 
