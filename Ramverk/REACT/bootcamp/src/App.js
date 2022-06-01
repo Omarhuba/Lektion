@@ -9,6 +9,7 @@ import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Contact } from "./components/Pages/Contact";
 import { Bootcamp } from "./components/Pages/Bootcamp";
+import { Login } from "./components/Pages/Login";
 
 function App() {
   return (
@@ -23,9 +24,9 @@ function App() {
             <Route path="/About" element={<About />} />
             <Route path="/Bootcamp" element={<Bootcamp />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Login" element={<Login />} />
           </Routes>
 
-          
           <Footer />
         </header>
       </div>
