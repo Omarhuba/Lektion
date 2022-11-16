@@ -2,7 +2,7 @@
 self.addEventListener('install', event =>{
     event.waitUntil(
         caches.open('gtillkorv').then( cache => cache.addAll([
-            '/',
+            '/',cd
             'index.html',
             'main.css',
             'manifest.json'
@@ -23,7 +23,7 @@ self.addEventListener('fetch'
         caches.match(event.request).then(response =>{
             const markup = '<h1>Seems you are offline!.</h1>';
             const headers = { 'Content-Type': 'text/html' }
-            const response = new Response(markup, {headers})
+            const offline = new Response(markup, {headers})
             if (!navigator.onLine) {
                 if(response){ return response}
 

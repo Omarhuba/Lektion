@@ -1,0 +1,37 @@
+html, body{
+    margin: auto;
+    background-color: black;
+
+}
+.wrapper{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.wrapper, .circle{
+    background-color: #F9E492;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.wrapper .triangle{
+    mix-blend-mode: multiply;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 200px 200px 200px;
+    border-color: transparent transparent #000000 transparent;
+    transform: translateY(250px);
+}
+.wrapper .triangle-1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 200px 200px 200px;
+    border-color: transparent transparent cyan transparent;
+    transform: translateY(250px);
+    z-index: -1; 
+    transform: translateX(190px);
+}

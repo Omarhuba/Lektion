@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "express": "^4.17.3",
-    "nedb-promises": "^6.0.3"
-  }
-}

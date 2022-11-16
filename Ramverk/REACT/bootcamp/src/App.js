@@ -3,8 +3,8 @@ import "./module/index.module.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
 import Navigation from "./components/layout/Navigation";
+import Footer from "./components/layout/Footer";
 import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Contact } from "./components/Pages/Contact";
